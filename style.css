@@ -1,0 +1,89 @@
+:root {
+  --Darkcyan: hsl(185, 75%, 39%);
+  --Verydarkdesaturatedblue: hsl(229, 23%, 23%);
+  --Darkgrayishblue: hsl(227, 10%, 46%);
+  --Darkgray: hsl(0, 0%, 59%);
+  font-family: "Kumbh Sans";
+  font-size: 18px;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-image: url(images/bg-pattern-top.svg),
+    url(images/bg-pattern-bottom.svg);
+  background-color: hsl(185, 75%, 39%);
+  background-repeat: no-repeat, no-repeat;
+  background-position: right 53vw bottom 34vh, left 48vw top 50vh;
+  overflow: hidden;
+}
+
+.container {
+  width: 350px;
+  height: 375px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  text-align: center;
+  background-color: white;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 20px 50px 100px -20px rgba(16, 34, 29, 0.33);
+}
+
+.card__profile {
+  margin-top: -3rem;
+}
+
+.card__bg {
+  border-radius: 15px 15px 0px 0px;
+}
+
+.avatar {
+  border-radius: 50%;
+  border: 5px solid white;
+}
+
+h1 {
+  font-size: 18px;
+  letter-spacing: 0.5px;
+}
+
+span {
+  color: hsl(0, 0%, 59%);
+  font-weight: 400;
+  padding-left: 3px;
+}
+
+.card__city {
+  font-size: 13px;
+  letter-spacing: 1px;
+  color: hsl(0, 0%, 59%);
+  padding-bottom: 10px;
+}
+
+.stats__category {
+  color: hsl(0, 0%, 59%);
+  font-size: 10px;
+  letter-spacing: 2px;
+}
+
+.stats__count {
+  font-weight: 700;
+  letter-spacing: 1px;
+  margin-top: 20px;
+}
+
+.stats__section {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-column-gap: 10px;
+  grid-row-gap: 5px;
+  border-top: 1px solid hsl(0, 0%, 89%);
+  width: 85%;
+}
